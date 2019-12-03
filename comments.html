@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Welcome to Shoryu's Websystems Assignment</title>
+        <link rel="stylesheet" href="websystems.css" type="text/css"/>
+        <link rel="icon" href="media/Logo.png">
+    </head>
+    <body>
+        <div class="header">
+            <a href="index.html">
+                <img src="media/Logo.png" id="logo" alt="Shoryu Das-Zaman's Personal Logo">
+            </a>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="past.html">Past</a>
+                <a href="future.html">Future</a>
+                <a class="active" href="comments.html">Comments</a>
+            </div>
+        </div>
+        <div class="main">
+            <span class="title">COMMENTS</span>
+            <br>
+            <br>
+            <div class="commentsection" id="tablediv">
+                <span class="subtitle" id="commenttitle">Technical Comments</span>
+                <table cellspacing="0" cellpadding="10">
+                    <tr>
+                        <th>Class/ID</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>#logo</td>
+                        <td>Controls the appearance of the self-designed logo in the top left hand corner, allowing it to remain anchored in the top left corner of all pages.</td>
+                    </tr>
+                    <tr>
+                        <td>body</td>
+                        <td>Sets the default font presets and background attributes of all pages on the website. Also provides a customised margin.</td>
+                    </tr>
+                    <tr>
+                        <td>#homebody</td>
+                        <td>Contols the appearance of the background image on the home page, an exception which overrides the CSS applied for other body backgrounds.</td>
+                    </tr>
+                    <tr>
+                        <td>.menu</td>
+                        <td>The class which controls the bar menu in its normal presentation, including its positioning, present on all pages. Pseudoclasses and subclasses beneath this one deterine how the bar menu interacts with users, particularly the .menu a:hover pseudoclass.</td>
+                    </tr>
+                    <tr>
+                        <td>.main</td>
+                        <td>The controlling class for content which sits in the majority of the page, i.e. Between the menu header and the footer.</td>
+                    </tr>
+                    <tr>
+                        <td>#mainpagetext</td>
+                        <td>A specific id which controls the different layout of text on the home page.</td>
+                    </tr>
+                    <tr>
+                        <td>#maintitle</td>
+                        <td>A span class which sets the font for the header on the main page, "Shoryu Das-Zaman".</td>
+                    </tr>
+                    <tr>
+                        <td>#mainopener</td>
+                        <td>Similar to the above span class, but for the "I am" opening title font.</td>
+                    </tr>
+                    <tr>
+                        <td>.title</td>
+                        <td>A class dictating how all the page titles (on pages other than home) appear, with their font and alignment</td>
+                    </tr>
+                    <tr>
+                        <td>.subtitle</td>
+                        <td>This class determines how the titles of sections are displayed, including their font and alignment.</td>
+                    </tr>
+                    <tr>
+                        <td>#spacer</td>
+                        <td>A div which exists only on the home page to provide room and readability for users.</td>
+                    </tr>
+                    <tr>
+                        <td>.section & .commentsection</td>
+                        <td>A major class which outlines how sections on each page behave, including the setup of the neon sign effect and rounded edges. Comment section is separate due to differences in display and alignment.</td>
+                    </tr>
+                    <tr>
+                        <td>.pastsection_img, .futuresection_img & .commentsection_img</td>
+                        <td>Classes which decide how the images present themselves within sections on the past, future & comments page. They differ primarily due to their margins and how they are positioned within the section.</td>
+                    </tr>
+                    <tr>
+                        <td>.footer</td>
+                        <td>The class which ensures that the footer section, with three image hyperlinks, maintains its position at the end of the page, and that the logos of services offered in the footer maintain a uniform size.</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <br>
+            <div class="commentsection">
+                <span class="subtitle">DESIGN & AESTHETIC</span>
+                <div class="commentcontent">This page has a neon-purple colour scheme, adapted from <a href="https://www.shutterstock.com/blog/neon-color-palettes">Shutterstock. </a> This is incorporated in all aspects of the page, including the tinting of images and the logo. I chose this scheme as it is straightforward in its application, and the colours are easy to apply on top of each other. As Paul Robert Lloyd refers to, "Everything old is new again," further inspiring my 80's theme neon designs. Unlike other colour schemes, it is also incredibly bright and makes the page look more dynamic. Even small additions, such as a brick background allow the colours to almost come out of the screen and scream vibrancy to the user. <br> <br> Furthermore, a set of fonts was chosen for this website: A Neon Font for the menu, and Rubrik for the content. These are both sans-serif fonts, and have a modern, sleek appeal, working well with the colour scheme for the rest of the website. </div>
+                <img src="media/pallete.jpg" alt="The colour pallette chosen for this website." id="comment_img">
+            </div>
+            <br>
+            <br>
+            <div class="commentsection">
+                <span class="subtitle">WEBSITE STRUCTURE</span>
+                <div class="commentcontent">The whole website contains 4 HTML webpages with 1 CSS file. The image below shows the hyperlink in 'index.html' in the 'public_html' directory leads to one HTML file called 'index.html' in a directory called 'websystems'. This 'index.html' is the home page of the website and has hyperlinks to 'index.html', 'past.html', 'future.html', and finally 'comments.html'. All of these webpages contain elements of CSS, from a file called 'websystems.css', which defines the User Interface and design throughout the website. </div>
+                <img src="media/sitemap.jpg" alt="All HTML & CSS files on the site are shown in their arrangement" id="comment_img">
+            </div>
+            <br>
+            <br>
+            <div class="commentsection">
+                <span class="subtitle">ACESSIBLITY</span>
+                There are numerous accessibility issues that frequently occur on webpages, as outlined by <a href="https://webaim.org/intro/">WebAIM (a web organisation with accessiblity in mind).</a> These have all been addressed in my website:
+                <ul>
+                    <li>Visual: Blindness, Colour-Blindness</li>
+                    <li>Hearing: Deafness, Hard of Hearing</li>
+                    <li>Motor: Low fine motor control, inability to use a mouse</li>
+                    <li>Cognitive: Learning disabilities, distractibility</li>
+                </ul>
+                All these issues in accessiblity are addressed through the following mechanisms:
+                <p id="accesslist">
+                    &#10004; Alternative Text (those relying on a screen reader can interpret images) <br>
+                    &#10004; Document Structure (all documents are logically structured to assist those with focus issues)<br>
+                    &#10004; Headers for Tables (this is very helpful for screen readers)<br>
+                    &#10004; Links make sense without context (not everyone follows the expected order of content engagement) <br>
+                    &#10004; No Audio (those who have hearing difficulties are not missing out) <br>
+                    &#10004; Colour doesn't convey meaning (the colour on this page exists only for aesthetic purposes) <br>
+                </p>
+            </div>
+        <br>
+        </div>
+        <div class="footer">
+            <a href="http://www.linkedin.com/in/ShoryuDZ" target="_blank"> <img src="media/linkedin.png" alt="View Shoryu's LinkedIn"> </a>
+            <a href="http://www.facebook.com/ShoryuDZ" target="_blank"> <img src="media/facebook.png" alt="View Shoryu's Facebook"> </a>
+            <a href="https://www.youtube.com/playlist?list=LLyOOQhh8zNKpeJaiqKR05Gg" target="_blank"> <img src="media/music.png" alt="Listen to Shoryu's favourite music"> </a>
+        </div>
+    </body>
+</html>

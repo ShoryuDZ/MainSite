@@ -1,0 +1,218 @@
+@font-face {
+    font-family: "Neon";
+    src: url(media/neon.otf);
+}
+
+@font-face{
+    font-family: "Rubik";
+    src: url(media/rubik.ttf);
+}
+
+#logo {
+    width: 275px;
+    height: 140px;
+    margin-left: 15px;
+    position: relative;
+}
+
+body {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-family: "Rubik";
+    background-image: url(media/wall.jpg);
+    background-size: cover;
+    color: #FFFFFF;
+    font-size: 23px;
+}
+
+#homebody {
+    background-image: url(media/IMG_3190.jpg);
+    background-size: cover;
+}
+
+.menu {
+    overflow: hidden;
+    float: right;
+    position: absolute;
+    left: 45%;
+    width: 55%;
+    font-family: 'Neon';
+    font-weight: 500;
+    top: 20px;
+    display: inline;
+}
+
+.menu a {
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-size: 26px;
+    width: 25%;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    color: #F148FB;
+}
+
+.menu a:hover {
+    color: #FFACFC;
+    font-size: 29px;
+}
+
+.menu a.active {
+    color: #FFACFC;
+}
+
+.main{
+    width: 100%;
+    display: block;
+}
+
+#mainpagetext {
+    position: relative;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    top: 50%;
+}
+
+#maintitle {
+    font-size: 50pt;
+    color: #FFACFC;
+}
+
+#mainopener {
+    color: #FFACFC;
+    font-size: 26pt;
+}
+
+.title {
+    color: #FFACFC;
+    font-size: 40pt;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+a {
+    color: #F148FB;
+}
+
+.footer {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+#homefooter {
+    bottom: 10px;
+    position: fixed;
+}
+
+.footer img {
+    height: 40px;
+    width: 40px;
+}
+
+#spacer{
+    display: block;
+    min-height: 150px;
+}
+
+.section {
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 15px;
+    background-color: #000;
+    border-color: #bb9dcf;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 10px #560A86;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.commentsection{
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 15px;
+    background-color: #000;
+    border-color: #bb9dcf;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 10px #560A86;
+    overflow: hidden;
+    align-items: center;
+    display: block;
+}
+
+.commentsection img{
+    max-height: inherit;
+    max-width: 28%;
+    float: right;
+}
+
+.pastsection_img {
+    float: left;
+    vertical-align: middle;
+    margin: 15px;
+    box-shadow: 0 0 8px 8px #222222;
+    position: relative;
+}
+
+.futuresection_img {
+    float: right;
+    vertical-align: middle;
+    margin: 15px;
+    width: 320px;
+    height: inherit;
+    box-shadow: 0 0 8px 8px #222222;
+    position: relative;
+}
+
+.subtitle {
+    color: #F148FB;
+    text-align: right;
+    width: auto;
+    display: block;
+    font-size: 25pt;
+    margin: 15px;
+}
+
+.commentcontent {
+    width: 70%;
+    display: inline-block;
+}
+
+table {
+    margin: 0;
+    border: none;
+    font-size: 15pt;
+}
+
+#tablediv {
+    padding: 0;
+    padding-top: 10px;
+}
+
+table tr:nth-child(odd) {
+    background: #7122FA;
+}
+
+table tr:nth-child(even) {
+    background: #560A86;
+}
+
+#commenttitle {
+    text-align: center;
+}
+
+#accesslist {
+    margin-left: 50px;
+}
