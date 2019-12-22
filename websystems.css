@@ -211,6 +211,23 @@ a {
     display: inline-block;
 }
 
+.orgImage {
+    height: 150px;
+}
+
+.bottomSection {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 225px;
+}
+
+.logoColumn {
+    width: 20%;
+    float: left;
+}
+
 table {
     margin: 0;
     border: none;
