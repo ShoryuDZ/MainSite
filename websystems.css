@@ -15,20 +15,27 @@
     position: relative;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     margin-top: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
     margin-bottom: 5px;
     font-family: "Rubik";
     background-image: url(media/wall.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     color: #FFFFFF;
-    font-size: 23px;
+    font-size: 26px;
 }
 
 #homebody {
-    background-image: url(media/IMG_3190.png);
+    background-image: url(media/self-background.png);
     background-size: cover;
 }
 
@@ -57,7 +64,6 @@ body {
 
 .menu a:hover {
     color: #FFACFC;
-    font-size: 29px;
 }
 
 .menu a.active {
@@ -67,6 +73,8 @@ body {
 .main{
     width: 100%;
     display: block;
+    padding: 0;
+    margin: 0;
 }
 
 #mainpagetext {
@@ -123,18 +131,32 @@ a {
 }
 
 .section {
-    margin-left: 2%;
-    margin-right: 2%;
-    padding: 15px;
     background-color: #000;
     border-color: #bb9dcf;
-    border-width: 5px;
+    border-width: 5px 0px;
     border-style: solid;
-    border-radius: 20px;
     box-shadow: 0px 0px 15px 10px #560A86;
     overflow: hidden;
+    width: 100%;
+    min-height: 85vh;
+    line-height: 40px;
     display: flex;
-    align-items: center;
+    padding: 15px 0px;
+}
+
+.sectiontext {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-self: center;
+    width: 40%;
+}
+
+.fillerImage {
+    min-height: 100vh;
+    align-self: center;
+    min-width: 100%;
 }
 
 .commentsection{
@@ -178,11 +200,10 @@ a {
 
 .subtitle {
     color: #F148FB;
-    text-align: right;
+    text-align: left;
     width: auto;
     display: block;
     font-size: 25pt;
-    margin: 15px;
 }
 
 .commentcontent {
