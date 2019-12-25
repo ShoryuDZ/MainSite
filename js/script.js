@@ -12,4 +12,19 @@ $(document).ready(function($) {
             window.location.hash = target;
         });
     });
+    
+    var button = $('#backToTopButton');
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            button.addClass('show');
+        } 
+        else {
+            button.removeClass('show');
+        }
+    });
+
+    button.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, 2500);
+    });
 });
