@@ -1,15 +1,14 @@
 $(document).ready(function($) {
-    $('a[href^="#"]').bind('click.scroll', function(e) {
-        e.preventDefault();
         
-        // Get the current target hash
-        var target = this.hash;
-        
-        // Animate the scroll bar action so its smooth instead of a hard jump
-        $('html, body').stop().animate({
-            'scrollTop' : $(target).offset().top
-        }, 4000, 'swing', function() {
-            window.location.hash = target;
+    document.querySelectorAll('a[id^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            var hash = $(this).attr('id');
+            
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 2000);
         });
     });
     

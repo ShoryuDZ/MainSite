@@ -141,6 +141,31 @@ a {
     justify-content: center;
     align-items: center;
     padding: 15px 0px 0px 0px;
+    z-index: -200;
+}
+
+#itIntro {
+    background-image: url(media/wtg.png);
+    background-size: cover;
+    background-position: center;
+    justify-content: left;
+    align-items: left;
+}
+
+#socialResponsiblity {
+    background-image: url(media/coding.png);
+    background-size: cover;
+    background-position: center;
+    justify-content: right;
+    align-items: right;
+}
+
+#personalRole {
+    background-image: url(media/classroom.png);
+    background-size: cover;
+    background-position: center;
+    justify-content: right;
+    align-items: right;
 }
 
 .sectiontext {
@@ -150,6 +175,21 @@ a {
     margin-bottom: auto;
     align-self: center;
     width: 40%;
+    z-index: 10;
+}
+
+#ittext_1 {
+    margin-left: 30px;
+    margin-top: 15vh;
+    position: relative;
+    align-self: flex-start;
+}
+
+#ittext_2 {
+    margin-right: 30px;
+    margin-top: 15vh;
+    position: relative;
+    align-self: flex-end;
 }
 
 .fillerImage {
