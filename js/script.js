@@ -5,10 +5,15 @@ $(document).ready(function($) {
             e.preventDefault();
             
             var hash = $(this).attr('id');
+            var scrollSpeed = 2000;
+
+            if (location.pathname.endsWith("education.html")) {
+                scrollSpeed = 4000;
+            }
             
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 2000);
+            }, scrollSpeed);
         });
     });
     
