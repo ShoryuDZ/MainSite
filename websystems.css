@@ -141,7 +141,6 @@ a {
     justify-content: center;
     align-items: center;
     padding: 15px 0px 0px 0px;
-    z-index: -200;
 }
 
 #itIntro {
@@ -166,6 +165,10 @@ a {
     background-position: center;
     justify-content: right;
     align-items: right;
+}
+
+#gallery {
+    padding: 40px 0px;
 }
 
 .sectiontext {
