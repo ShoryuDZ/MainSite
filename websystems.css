@@ -275,6 +275,11 @@ a {
     padding-left: 20px;
 }
 
+p {
+    line-height: 35px;
+    font-size: 20px;
+}
+
 #backToTopButton {
     display: block;
     position: fixed;
