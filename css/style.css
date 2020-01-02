@@ -208,9 +208,10 @@ a {
 /* Button to next section */
 .sectionDownArrow {
     align-self: center;
-    height: 200px;
+    height: 175px;
     left: 40%;
-    padding-top: 0;
+    padding: 20px;
+    cursor: pointer;
 }
 
 /* Images between sections */
@@ -260,6 +261,7 @@ a {
 
 /* Back to top button styling, visibility on as activated by script.js */
 #backToTopButton.show {
-  opacity: 1;
-  visibility: visible;
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
 }
