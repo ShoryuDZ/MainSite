@@ -1,5 +1,7 @@
 $(document).ready(function($) {
-        
+    
+    $('body:not(#loadingScreen)').css('display', 'black');
+
     document.querySelectorAll('a[id^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -31,4 +33,19 @@ $(document).ready(function($) {
         e.preventDefault();
         $('html, body').animate({scrollTop:0}, 2500);
     });
+    
+    $('a').click(function(event) {
+        event.preventDefault();
+        newLocation = this.href;
+        $('body').fadeOut(1000, newpage);
+    });
+  
+    function newpage() {
+        window.location = newLocation;
+    }
+});
+
+$(window).on('load', function() {
+    $('#loadingScreen').fadeOut(1500);
+    $('body:not(#loadingScreen)').fadeIn(2500);
 });
