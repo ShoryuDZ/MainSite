@@ -9,13 +9,14 @@
 }
 
 /* Positioning the logo in the top left corner */
-#logo {
+.logo {
     width: 275px;
     height: 140px;
     margin-left: 15px;
     position: relative;
 }
 
+/* Ensuring background transition looks smooth */
 html {
     background-color: #000000;
 }
@@ -61,9 +62,69 @@ body {
     color: #F148FB;
 }
 
+/* Hiding menu icon until required */
+.menu .icon {
+  display: none;
+}
+
 /* Menu Link styling when mouse hovers or link is active */
 .menu a:hover, .menu a.active {
     color: #FFACFC;
+}
+
+/* Actions to occur when window is narrowed */
+@media screen and (max-width: 1050px) {
+    
+    /* Hiding regular menu */
+    .menu a {
+        display: none;
+    }
+    
+    /* Allowing menu icon to appear */
+    .menu a.icon {
+        display: block;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+    }
+    
+    /* .responsive class added in script.js onClick of button */
+    .menu.responsive {
+        position: relative;
+        display: block;
+        height: auto;
+        z-index: 1000;
+    }
+    
+    /* Lowering links from the icon button, and forcing content beneath to move down */
+    .menu .links {
+        padding: 50px 10px;
+    }
+    
+    /* Aligning individual links */
+    .menu.responsive a {
+        float: none;
+        display: block;
+        text-align: right;
+    }
+}
+
+/* Smallscreen logo configuration */
+@media screen and (min-width: 400px) and (max-width: 550px) {
+    .logo.responsive {
+        width: 137.5px;
+        height: 70px;
+        margin: 50px 0px 0px 50px;
+    }
+}
+
+/* Mobile logo configuration */
+@media screen and (max-width: 400px) {
+    .logo.responsive {
+        width: 100px;
+        height: 55px;
+        margin: 20px 0px 0px 10px;
+    }
 }
 
 /* Footer Positioning */

@@ -34,7 +34,7 @@ $(document).ready(function($) {
         $('html, body').animate({scrollTop:0}, 2500);
     });
     
-    $('a').click(function(event) {
+    $('a:not(.icon)').click(function(event) {
         event.preventDefault();
         newLocation = this.href;
         $('body').fadeOut(1000, newpage);
@@ -49,3 +49,16 @@ $(window).on('load', function() {
     $('#loadingScreen').fadeOut(1500);
     $('body:not(#loadingScreen)').fadeIn(2500);
 });
+
+function openMenu() {
+    var menu = document.getElementById("responsiveMenu");
+    var logo = document.getElementById("responsiveLogo");
+    if (menu.className === "menu") {
+        menu.className += " responsive";
+        logo.className += " responsive";
+    }
+    else {
+        menu.className = "menu";
+        logo.className = "logo";
+    }
+}
