@@ -34,10 +34,12 @@ $(document).ready(function($) {
         $('html, body').animate({scrollTop:0}, 2500);
     });
     
-    $('a:not(.icon)').click(function(event) {
+    $('a').click(function(event) {
         event.preventDefault();
         newLocation = this.href;
-        $('body').fadeOut(1000, newpage);
+        if (newLocation.length && !newLocation.endsWith(location.pathname)) {
+            $('body').fadeOut(1000, newpage);
+        }
     });
   
     function newpage() {
