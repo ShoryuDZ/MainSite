@@ -33,6 +33,7 @@ body {
     color: #FFFFFF;
     font-size: 26px;
     height: 100vh;
+    min-height: 100vh;
 }
 
 /* Specific styling for the home page */
@@ -86,6 +87,7 @@ body {
         position: fixed;
         right: 20px;
         top: 20px;
+        z-index: 2;
     }
     
     /* .responsive class added in script.js onClick of button */
@@ -134,12 +136,6 @@ body {
     width: 100%;
 }
 
-/* Fixed Footer for Home Page */
-#homefooter {
-    bottom: 10px;
-    position: fixed;
-}
-
 /* Footer icon sizing */
 .footer img {
     height: 40px;
@@ -156,10 +152,7 @@ body {
 
 /* Home page text styling */
 #homepagetext {
-    position: fixed;
-    margin-right: 30px;
-    margin-left: 60px;
-    bottom: 50px;
+    margin: 25vh 5vw 25px 5vw;
 }
 
 /* Home page title */
@@ -206,7 +199,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15px 0px 0px 0px;
+    padding: 45px 0px 0px 0px;
 }
 
 /* Setting Background Images for IT Page */
@@ -228,19 +221,16 @@ a {
 /* Section with organisation table */
 .organisationsSection {
     text-align: center;
-    padding: 100px 175px;
+    padding: 100px 12vw;
     display: flex;
     flex-direction: column;
 }
 
 /* Text styling within sections */
 .sectiontext {
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 30px;
-    margin-bottom: auto;
+    margin: auto 0;
     align-self: center;
-    width: 40%;
+    width: 50%;
     z-index: 10;
 }
 
@@ -278,9 +268,8 @@ a {
 
 /* Images between sections */
 .fillerImage {
-    min-height: 100vh;
-    align-self: center;
     width: 100%;
+    align-self: center;
 }
 
 /* Title for organisation tables & within about timeline */
@@ -336,6 +325,29 @@ a {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+/* Rotate Device Warning Screen */
+#rotateDevice {
+    display: none;
+}
+
+/* Image and Div Appear only under certain circumstances */
+@media screen and (max-width: 550px) and (orientation: portrait) {
+    #rotateDevice {
+        display: flex;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000;
+        background-color: black;
+        opacity: 0.97;
+    }
+    #rotateDevice img {
+        height: 20vh;
+        width: 35vw;
+        margin: auto;
+    }
 }
 
 /* Back to top button styling, non visible */

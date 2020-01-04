@@ -34,7 +34,7 @@ $(document).ready(function($) {
         $('html, body').animate({scrollTop:0}, 2500);
     });
     
-    $('a').click(function(event) {
+    $('a:not(.icon)').click(function(event) {
         event.preventDefault();
         newLocation = this.href;
         if (newLocation.length && !newLocation.endsWith(location.pathname)) {
@@ -63,4 +63,6 @@ function openMenu() {
         menu.className = "menu";
         logo.className = "logo";
     }
+    
+    $('html, body').animate({scrollTop:0}, 2500);
 }
